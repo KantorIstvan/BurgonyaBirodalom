@@ -1,0 +1,233 @@
+body {
+  background-image: url(/img/theme.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  gap: 75px;
+  /* background-color: green; */
+}
+
+/* NÉGYZETRÁCS */
+
+.grid-container {
+  margin: 20px;
+  padding: 5px;
+  /* background-color: blue; */
+}
+
+.square {
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #ddb892;
+  border: 2px solid #b08968;
+}
+.cell-image {
+  border-radius: 5px;
+  width: 30px;
+  height: 25px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+table {
+  background-color: white;
+  padding: 5px;
+}
+
+/* ********STATS******** */
+/* ÉVSZAKOK */
+
+.season-container {
+  display: flex;
+  gap: 15px;
+  /* background-color: red; */
+}
+.season-score {
+  margin-top: 5px;
+}
+.spring {
+  color: white;
+  font-weight: bold;
+  background-color: #55a630;
+  border: 4px solid #007f5f;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+}
+.summer {
+  color: white;
+  font-weight: bold;
+  background-color: #dbb42c;
+  border: 4px solid #b69121;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+}
+.autumn {
+  color: white;
+  font-weight: bold;
+  background-color: #8b5e34;
+  border: 4px solid #6f4518;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+}
+.winter {
+  color: white;
+  font-weight: bold;
+  background-color: #0096c7;
+  border: 4px solid #0077b6;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+}
+
+.score {
+  /* background-color: purple; */
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin: 5px;
+}
+
+/* FELADATOK */
+.task-container {
+  /* background-color: cyan; */
+  max-width: 700px;
+}
+.tasks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  background-color: #363636;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  display: flex;
+}
+
+img {
+  margin: 5px;
+  height: 60px;
+  width: 70px;
+}
+h2 {
+  font-size: 20px;
+}
+.letter {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 20px;
+  align-items: baseline;
+  grid-area: 1 / 2 / 3 / 3;
+}
+.active-mission {
+  color: #55a630;
+}
+.desc {
+  font-size: 11px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.taskScore {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.remaining-time-container {
+  display: flex;
+  gap: 20px;
+}
+.remaining-time-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.remaining-time {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* PIECE CONTROLL*/
+.piece-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.statement {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.btn {
+  margin: 10px;
+  text-align: right;
+  font-weight: bold;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 15px;
+  border: 4px solid #999;
+  width: 150px;
+}
+
+.piece {
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+}
+.piece-square {
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+.time-row {
+  font-size: 20px;
+  font-weight: 800;
+}

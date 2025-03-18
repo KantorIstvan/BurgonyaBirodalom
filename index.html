@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Burgonya térkép</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <h1>Burgonya térkép</h1>
+        <table id="tablee"></table>
+      </div>
+      <div class="stats-container">
+        <div class="season-container">
+          <div class="spring">
+            Tavasz
+            <p class="season-score" id="springScore">0 pont</p>
+          </div>
+          <div class="summer">
+            Nyár
+            <p class="season-score" id="summerScore">0 pont</p>
+          </div>
+          <div class="autumn">
+            Ősz
+            <p class="season-score" id="autumnScore">0 pont</p>
+          </div>
+          <div class="winter">
+            Tél
+            <p class="season-score" id="winterScore">0 pont</p>
+          </div>
+        </div>
+        <p class="score">Összesen: 0 pont</p>
+        <div class="task-container">
+          <h2 id="currentS" >Jelenlegi évszak:</h2>
+          <hr />
+          <div class="tasks">
+            <div class="task">
+              <div class="desc"></div>
+            </div>
+            <div class="task">
+              <div class="desc"></div>
+            </div>
+            <div class="task">
+              <div class="desc"></div>
+            </div>
+            <div class="task">
+              <div class="desc"></div>
+            </div>
+        </div>
+        <div class="remaining-time-container">
+          <p class="remaining-time-label">Évszakból hátralévő idő:</p>
+          <p class="remaining-time" id="remaining-time">28</p>
+        </div>
+        <hr> 
+        <div class="piece-container">
+          <div class="control-panel">
+            <p class="statement">Lehelyezendő elem:</p>
+            <button class="btn" id="rotate">Forgatás</button>
+            <br />
+            <button class="btn" id="mirror">Tükrözés</button>
+          </div>
+          <table class="piece"></table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
